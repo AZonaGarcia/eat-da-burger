@@ -1,19 +1,47 @@
-var express = require("express");
-var exphbs = require("express-handlebars");
-var routes = require("./controllers/burgerController.js");
+$(function () {
+    $(".remove-burger").on("click", function (event) {
+        var id = $(this).data("id");
 
-var PORT = process.env.PORT || 8080
+        $.ajax()
+    })
 
-app.use(express.static("public"));
+    $(".change-devour").on("click", function (event) {
+        var id = $(this).data("id");
+        var newDevour = $(this).data("newsdevour");
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+        var newDevourState = {
+            devour: newDevour
+        };
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+        $.ajax("/api/burgers/" + id, {
+            type: "PUT",
+            data: newDevourState
+        }).then(
+            function () {
+                console.log("change devour to", newDevour);
 
-app.use(routes);
+                location.reload();
+            }
+        )
+    })
 
-app.listerner(PORT, function () {
-    console.log("Server listening on https://localhost:" + PORT);
+    $(".create-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var newBurger = {
+            name: $("#brgr").val().trim(),
+            devour: $("[name=devour]:checked").val().trim()
+        };
+
+        $.ajax("/api/burgers", {
+            type: "POST",
+            data: newBurger
+        }).then(
+            function () {
+                console.log("added a new burger");
+
+                location.reload();
+            }
+        );       
+    })
 })
