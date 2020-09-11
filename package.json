@@ -1,0 +1,26 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "* This project will display the uses and simplicity of Express handlebars, Express, and MySql by usung an application deolyed to Heroku that will allow a user to choose to \"DEVOUR IT!\" a burger or say \"No Thank You\".",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AZonaGarcia/eat-da-burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AZonaGarcia/eat-da-burger/issues"
+  },
+  "homepage": "https://github.com/AZonaGarcia/eat-da-burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
