@@ -8,14 +8,14 @@
 > <ins>SO THAT</ins> I can demonstrate the uses of MySql, Express ans=d Express-Handlebars
 
 ## Task To Be Completed:
-- [] Create repository
-- [] Create file structure
-- [] Create ReadMe
-- [] Create Heroku Repository
-- [] Lorem Lorem Lorem
-- [] Lorem Lorem Lorem
-- [] Lorem Lorem Lorem
-- [ ] Put x in box to show completed task
+- [x] Create repository
+- [x] Create file structure
+- [x] Create ReadMe
+- [x] Create Heroku Repository
+- [x] Create files
+- [x] Test app
+- [] Troubleshoot
+
 
 ## Link to Website:
 [Github Page](Link of github page.io)
