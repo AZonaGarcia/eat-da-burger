@@ -3,9 +3,10 @@
 <h2>Burgers to DEVOUR!</h2>
 
 <ul>
-    {{#each burgers}}
+    {{#each burger}}
         {{#unless devour}}
-            {{> burger/burgerBlock devour=true}}
+      
+            {{> burgerBlock devour=true}}
         {{/unless}}
     {{/each}}
 </ul>
@@ -13,9 +14,9 @@
 <h2>No Thank You!</h2>
 
 <ul>
-    {{#each burgers}}
+    {{#each burger}}
         {{#if devour}}
-            {{> burgers/burgerBlock devour=false}}
+            {{> burgerBlock devour=false}}
         {{/if}}
     {{/each}}
 </ul>
