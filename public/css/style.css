@@ -1,20 +1,43 @@
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
-  
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/originals/05/df/10/05df10fcf25c6c7347e8893fab5716b3.jpg");
+  background-repeat: repeat;
+  background-color: #cccccc;
+}
+
+#eatDaBrgr {
+  background-color: rgba(245, 245, 220, 0.9);
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 7%;
+  padding: 15px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-right: 25px;
+}
+
+#footer {
+  padding: 10px;
+}

@@ -1,34 +1,55 @@
-<h1>BURGERS!!! NOM NOM NOM</h1>
+<div class="container" id="eatDaBrgr">
+    <h1>BURGERS!!! NOM NOM NOM</h1>
 
-<h2>Burgers to DEVOUR!</h2>
+    <h2>Burgers to DEVOUR!</h2>
 
-<ul>
-    {{#each burger}}
+    <ul>
+        {{#each burger}}
         {{#unless devour}}
-      
-            {{> burgerBlock devour=true}}
+
+        {{> burgerBlock devour=true}}
         {{/unless}}
-    {{/each}}
-</ul>
+        {{/each}}
+    </ul>
 
-<h2>No Thank You!</h2>
+    <h2>No Thank You!</h2>
 
-<ul>
-    {{#each burger}}
+    <ul>
+        {{#each burger}}
         {{#if devour}}
-            {{> burgerBlock devour=false}}
+        {{> burgerBlock devour=false}}
         {{/if}}
-    {{/each}}
-</ul>
+        {{/each}}
+    </ul>
 
-<h2>Add A Yummy Burger</h2>
-<form class="create-form">
+    <h2>Add A Yummy Burger</h2>
+    <form class="create-form">
 
-    <div class="form-group">
-        <label for="brgr">Whatcha gonna do?</label><br>
-        <input type="radio" name="devour" value="1" checked> DEVOUR IT! <br>
-        <input type="radio" name="devour" value="0"> No Thank You 
-    </div>
+        <div class="form-group">
+            <label for="brgrName">Burger:</label>
+            <input type="text" id="brgrName" name="name">
+        </div>
 
-    <button>Serve up your choice!</button>
-</form>
+        <div class="form-group">
+            <label for="brgr">Whatcha gonna do?</label><br>
+            <input type="radio" name="devour" value="0" checked> DEVOUR IT! <br>
+            <input type="radio" name="devour" value="1"> Share!
+        </div>
+
+        <button type="submit">Serve up your choice!</button>
+    </form>
+
+    
+    <footer id="footer" class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://github.com/AZonaGarcia/azonagarcia.github.io"> Zona Garcia</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+</div>
+
+<!-- Footer -->
+<!-- Footer -->
