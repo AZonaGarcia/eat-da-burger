@@ -18,8 +18,8 @@
 
 
 ## Link to Website:
-> [Github Page](https://github.com/AZonaGarcia/eat-da-burger) 
-> [Deployed application](https://github.com/AZonaGarcia/eat-da-burger.git)
-> [Heroku Deployment](Link of github page.io)
+> [Github Page](https://github.com/AZonaGarcia/eat-da-burger) <br />
+> [Deployed application](https://github.com/AZonaGarcia/eat-da-burger.git)<br />
+
 
 ![Eat Da Buger Screenshot](https://github.com/AZonaGarcia/eat-da-burger/blob/master/public/images/eat-da-burger-screenshot.png)
